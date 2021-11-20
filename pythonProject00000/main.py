@@ -2,15 +2,18 @@ import random
 
 def pop(l):
     print(l.pop(0) )
-    s=l
+    print(l)
 
 
 
-def push(l):
-    l=int(input())
-    s.append(l)
+def push(l,n):
+
+    s.append(n)
     print(s)
+
 s = [random.randint(0, 100) for i in range(random.randint(1, 100))]
-print(s,'!')
+num=int(input('Введите число:'))
+print(s)
 pop(s)
-push(s)
+push(s,num)
+
